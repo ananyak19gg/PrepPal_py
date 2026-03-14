@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+python-dotenv
+pdfplumber
+easyocr
+openai
+openai-whisper
+pydub
+opencv-python
+mediapipe
+numpy
+Pillow
