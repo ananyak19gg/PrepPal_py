@@ -5,7 +5,7 @@ import tempfile
 from pathlib import Path
 
 # Load Whisper model once
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 def analyze_audio_chunk(audio_bytes: bytes, filename: str | None = None) -> Dict:
     """
