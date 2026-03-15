@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
-from routers import resume, video, audio
+from routers import resume, video, audio, evaluation
 import os
 
 load_dotenv()
@@ -21,6 +21,7 @@ app.add_middleware(
 app.include_router(resume.router)
 app.include_router(video.router)
 app.include_router(audio.router)
+app.include_router(evaluation.router)
 @app.get("/")
 def health_check():
     return {"status": "Interview AI Backend Running"}
